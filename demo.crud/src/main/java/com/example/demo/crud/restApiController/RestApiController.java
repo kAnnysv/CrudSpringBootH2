@@ -2,7 +2,7 @@ package com.example.demo.crud.restApiController;
 
 import com.example.demo.crud.model.Person;
 import com.example.demo.crud.repository.PersonRepository;
-import lombok.RequiredArgsConstructor;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,11 +20,11 @@ public class RestApiController {
         this.personRepository = personRepository;
 
        this.personRepository.saveAll(List.of(
-               new Person(1L,"Name1", "Surname1" ),
-               new Person(2L,"Name2", "Surname2" ),
-               new Person(3L,"Name3", "Surname3" ),
-               new Person(4L,"Name4", "Surname4" ),
-               new Person(5L,"Name5", "Surname5" )
+               new Person("Name1", "Surname1" ),
+               new Person("Name2", "Surname2" ),
+               new Person("Name3", "Surname3" ),
+               new Person("Name4", "Surname4" ),
+               new Person("Name5", "Surname5" )
 
 
        ));
