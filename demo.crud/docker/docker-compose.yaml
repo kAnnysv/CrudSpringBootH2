@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+  app:
+    image: '0ad85ea2ce93'
+    container_name: spring-application
+    ports:
+      - '127.0.0.1:8080:8080'
